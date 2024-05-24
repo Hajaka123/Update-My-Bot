@@ -144,7 +144,18 @@ def get_cow_image_url():
 async def cow(ctx):
     '''Setiap kali permintaan cow (sapi) dipanggil, program memanggil fungsi get_duck_image_url'''
     image_url = get_cow_image_url()
-    await ctx.send(image_url)         
+    await ctx.send(image_url)
+@bot.command()
+async def Halo(ctx):
+    numsss = random.randint(1,4)
+    if numsss == 1:
+        await ctx.send('Halo i am Chat bot')
+    elif numsss == 2:
+        await ctx.send('Halo Hz_playz')
+    elif numsss == 3:
+        await ctx.send('Good to see you Hz_playz')
+    elif numsss == 4:
+        await ctx.send('Halo, how are you')  
 bot.run("")
 
  
